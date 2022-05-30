@@ -22,5 +22,5 @@ k8s_resource('tap-demo', port_forwards=["8080:8080"],
             extra_pod_selectors=[{'serving.knative.dev/service': 'tap-demo'}])
 
 allow_k8s_contexts('gke_web-practice-fleet_europe-west4-a_tap-reloaded')
-            update_settings ( max_parallel_updates = 3 , k8s_upsert_timeout_secs = 180 , suppress_unused_image_warnings = None )
+update_settings ( max_parallel_updates = 3 , k8s_upsert_timeout_secs = 180 , suppress_unused_image_warnings = None )
 
